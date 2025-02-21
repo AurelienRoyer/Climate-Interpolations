@@ -1,3 +1,11 @@
+################# Supplementary material for the work Late Pleistocene temperature patterns 
+##in the Western Palearctic: insights from rodent associations compared with General Circulation Models
+## by Aurélien Royer, Julien Crétat, Rémi Laffont, Sara Gamboa, Belén Luna, Iris Menéndez, 
+##Benjamin Pohl, Sophie Montuire, Manuel Hernandez Fernandez 
+## version 20/02/2025
+
+#### function used 
+
 plot_ISOSCAPE <- function (x, which = "mean", y_title = list(which = TRUE, title = bquote(delta^2 * H)),
                            sources = list(draw = TRUE, cex = 0.5, pch = 2, lwd = 1, col = "red"),
                            borders = list(borders = NA, lwd = 0.5, col = "black"),

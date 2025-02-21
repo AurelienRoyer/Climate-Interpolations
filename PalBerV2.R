@@ -1,3 +1,11 @@
+################# Supplementary material for the work Late Pleistocene temperature patterns 
+##in the Western Palearctic: insights from rodent associations compared with General Circulation Models
+## by Aurélien Royer, Julien Crétat, Rémi Laffont, Sara Gamboa, Belén Luna, Iris Menéndez, 
+##Benjamin Pohl, Sophie Montuire, Manuel Hernandez Fernandez 
+## version 20/02/2025
+
+#### PALBER function modified for calculation of spatial interpolation
+
 Func_BIOCLIM2 <- function(M, ...){
   UseMethod("Func_BIOCLIM2", M)
 }

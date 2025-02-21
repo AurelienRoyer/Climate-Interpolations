@@ -5,7 +5,7 @@
 ## version 20/02/2025
 
 ## settings the file with the data ----
-setwd(".../suppl.R.script")
+setwd(".../Appendix A")
 
 ## load of the packages ----
 library(IsoriX)
@@ -213,12 +213,14 @@ liste.iso<-c("iso.mat")
   biome.proba.cex[biome.proba.cex < 0.95]<-1
 
   biome.reel<-modern.iso.csv$Modern_climatic_zone
+  biome.pred<-modern.iso.csv$First_predite
   biome.compa<-NULL
   for (i in 1:length(biome.reel)){
-    biome.compa[i]<-identical(biome.reel[i],bio.clim$First_predite[i])
+    biome.compa[i]<-identical(biome.reel[i],biome.pred[i])
     
   }
   sum(biome.compa, na.rm = TRUE)
+  biome.compa<-biome.compa[-c(113,136,152)] ## Modern outliers to remove
   biome.compa[biome.compa == TRUE]<-17
   biome.compa[biome.compa == FALSE]<-15
   
